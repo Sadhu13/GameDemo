@@ -5,27 +5,35 @@ using Cainos.PixelArtPlatformer_VillageProps;
 
 public class TriggerEvent : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject redGround; 
+
+    private Collider2D redGroundCollider; 
+
     void Start()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        redGroundCollider = redGround.GetComponent<Collider2D>();
+
+
+        redGroundCollider.enabled = false;
     }
-    public Chest chest; 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the object entering the trigger is the player or something else
-        if (other.CompareTag("Player") || other.CompareTag("Interactable"))
+        if (other.CompareTag("Player"))
         {
-            // Open the chest
-            chest.Open();
+
+            redGroundCollider.enabled = true;
         }
     }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+
+        if (other.CompareTag("Player"))
+        {
+
+            redGroundCollider.enabled = false;
+        }
+    }
 }
