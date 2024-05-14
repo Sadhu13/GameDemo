@@ -17139,8 +17139,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.20804098, y: -1.7561992}
-  m_Size: {x: 1.8669502, y: 0.8125628}
+  m_Offset: {x: 0.0055235303, y: -1.9524069}
+  m_Size: {x: 2.0022964, y: 1.20498}
   m_Direction: 1
 --- !u!95 &1099999985
 Animator:
@@ -17152,7 +17152,7 @@ Animator:
   m_GameObject: {fileID: 1099999983}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 54dfff7b873529d46b9d43d2cf65b176, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6193ee480fb13eb41a5b66896882aca3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17274,7 +17274,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.19875002, y: -0.47310352}
+  m_Offset: {x: -0.009393543, y: -0.03822875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -17285,7 +17285,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.616812, y: 2.9482446}
+  m_Size: {x: 1.7430482, y: 3.817994}
   m_EdgeRadius: 0
 --- !u!4 &1099999990
 Transform:
@@ -17315,12 +17315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db25c5d523153cf4c907b38abb621435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalAxis: Horizontal2
+  horizontalAxis: HorizontalPlayer2
   jumpButton: Jump2
-  moveSpeed: 15
-  jumpPower: 20
-  isFacingRight: 1
-  isGrounded: 1
 --- !u!1001 &1101614244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22141,12 +22137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db25c5d523153cf4c907b38abb621435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalAxis: Horizontal
+  horizontalAxis: HorizontalPlayer1
   jumpButton: Jump
-  moveSpeed: 10
-  jumpPower: 16
-  isFacingRight: 1
-  isGrounded: 1
 --- !u!212 &1354517057
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22340,8 +22332,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.20804103, y: -2.0327213}
-  m_Size: {x: 1.8669504, y: 0.8416704}
+  m_Offset: {x: -0.19183233, y: -2.1911962}
+  m_Size: {x: 1.7372711, y: 1.1586201}
   m_Direction: 1
 --- !u!4 &1362651571 stripped
 Transform:
