@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2022.3.19f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker2
+AssetImportWorker7
 -projectPath
 C:/CloneBackUpGit/GameDemo/newdemo
 -logFile
-Logs/AssetImportWorker2.log
+Logs/AssetImportWorker7.log
 -srvPort
 55397
 Successfully changed project path to: C:/CloneBackUpGit/GameDemo/newdemo
@@ -49,12 +49,12 @@ C:/CloneBackUpGit/GameDemo/newdemo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [29304] Host "[IP] 192.168.0.29 [Port] 0 [Flags] 2 [Guid] 1221411881 [EditorId] 1221411881 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8S8DVBQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [30984] Host "[IP] 192.168.0.29 [Port] 0 [Flags] 2 [Guid] 321093731 [EditorId] 321093731 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8S8DVBQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [29304] Host "[IP] 192.168.0.29 [Port] 0 [Flags] 2 [Guid] 1221411881 [EditorId] 1221411881 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8S8DVBQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [30984] Host "[IP] 192.168.0.29 [Port] 0 [Flags] 2 [Guid] 321093731 [EditorId] 321093731 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8S8DVBQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 17.74 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 17.56 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.19f1 (244b723c30a6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -70,48 +70,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.020325 seconds.
-- Loaded All Assemblies, in  0.524 seconds
+Registered in 0.013536 seconds.
+- Loaded All Assemblies, in  0.482 seconds
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.342 seconds
-Domain Reload Profiling: 862ms
+- Finished resetting the current domain, in  0.314 seconds
+Domain Reload Profiling: 794ms
 	BeginReloadAssembly (157ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (90ms)
-	LoadAllAssembliesAndSetupDomain (203ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (189ms)
 		LoadAssemblies (155ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (198ms)
-				TypeCache.ScanAssembly (180ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (185ms)
+				TypeCache.ScanAssembly (168ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (343ms)
+	FinalizeReload (315ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (275ms)
+		SetupLoadedEditorAssemblies (248ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (187ms)
-			ProcessInitializeOnLoadMethodAttributes (58ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (168ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,8 +119,8 @@ Domain Reload Profiling: 862ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.774 seconds
-Refreshing native plugins compatible for Editor in 6.35 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.713 seconds
+Refreshing native plugins compatible for Editor in 6.63 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
@@ -129,47 +129,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.782 seconds
-Domain Reload Profiling: 1550ms
-	BeginReloadAssembly (171ms)
+- Finished resetting the current domain, in  0.657 seconds
+Domain Reload Profiling: 1365ms
+	BeginReloadAssembly (160ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (24ms)
-	RebuildCommonClasses (46ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (42ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (488ms)
-		LoadAssemblies (370ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (444ms)
+		LoadAssemblies (351ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (216ms)
-			TypeCache.Refresh (180ms)
-				TypeCache.ScanAssembly (162ms)
-			ScanForSourceGeneratedMonoScriptInfo (29ms)
+		AnalyzeDomain (191ms)
+			TypeCache.Refresh (163ms)
+				TypeCache.ScanAssembly (147ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (783ms)
+	FinalizeReload (658ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (569ms)
+		SetupLoadedEditorAssemblies (488ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (101ms)
-			ProcessInitializeOnLoadAttributes (390ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (351ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 8.61 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 11.84 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4133 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 64 unused Assets / (45.4 MB). Loaded Objects now: 4595.
 Memory consumption went from 147.1 MB to 101.7 MB.
-Total: 6.329000 ms (FindLiveObjects: 0.396000 ms CreateObjectMapping: 0.459400 ms MarkObjects: 5.281200 ms  DeleteObjects: 0.191200 ms)
+Total: 6.246100 ms (FindLiveObjects: 0.357500 ms CreateObjectMapping: 0.379500 ms MarkObjects: 5.356700 ms  DeleteObjects: 0.151500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -187,34 +187,50 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 35906.092977 seconds.
-  path: Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/daughter_idle.png
-  artifactKey: Guid(b2b402effd8b78448ba2153fa85a4e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/daughter_idle.png using Guid(b2b402effd8b78448ba2153fa85a4e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '131d2b33eed5476a44e6d93b5a0215f3') in 0.145533 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/grandpa_jump.png
-  artifactKey: Guid(2aa65560e57ab1f46a48b7229b0ee251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/grandpa_jump.png using Guid(2aa65560e57ab1f46a48b7229b0ee251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea294acc6d89e83010f9972e392f348') in 0.021460 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
+  Time since last request: 36063.932356 seconds.
   path: Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/daughter_walk.png
   artifactKey: Guid(4dc84b249705e0b4b87eaaec94320ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/daughter_walk.png using Guid(4dc84b249705e0b4b87eaaec94320ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df4012b185679005a9d8172ca94affd') in 0.022384 seconds
+Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/daughter_walk.png using Guid(4dc84b249705e0b4b87eaaec94320ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dbac4f86c14767bdac098e9ef4bda49') in 0.130875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 12.083262 seconds.
+  path: Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/daughter_walk2.png
+  artifactKey: Guid(8c3d1f691e3de3f4ea099e7883b52dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/daughter_walk2.png using Guid(8c3d1f691e3de3f4ea099e7883b52dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62002b3f181f6b6f1c6e8633d0ca379c') in 0.040498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 691.089673 seconds.
+  path: Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/d_jump.png
+  artifactKey: Guid(1ecc914267ac4f747a0b28953ce2faed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/d_jump.png using Guid(1ecc914267ac4f747a0b28953ce2faed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0731d4719cc2b9bc98c777264f754871') in 0.044796 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/g_walk.png
+  artifactKey: Guid(93fef368ad5ab1f458b51b842178aa58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/g_walk.png using Guid(93fef368ad5ab1f458b51b842178aa58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63333847262c3701bad4a5e12c3dac72') in 0.031334 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/g_idle.png
+  artifactKey: Guid(ae47f2fe94c7bb34ea0c6f6a3d21a2a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/g_idle.png using Guid(ae47f2fe94c7bb34ea0c6f6a3d21a2a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76fa84db97b91a476b83b3330f4a91c5') in 0.029633 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/daughter_walk2.png
-  artifactKey: Guid(8c3d1f691e3de3f4ea099e7883b52dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/daughter_walk2.png using Guid(8c3d1f691e3de3f4ea099e7883b52dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e537f25525493a9445bbaec7b19c92') in 0.026670 seconds
+  path: Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/d_walk2.png
+  artifactKey: Guid(929a3ada0f507b94c813c7e997938e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nine Pines Animation/2D Character Sprite Animation - Penguin/sprites/d_walk2.png using Guid(929a3ada0f507b94c813c7e997938e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb72a7a4b6f34b86982724385359d5b4') in 0.026610 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

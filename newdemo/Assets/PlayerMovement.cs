@@ -4,63 +4,79 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 16f;
-    private bool isFacingRight = true;
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Animator animator;
+    public string horizontalAxis;
+    public string jumpButton;
+    public float moveSpeed = 10f;
+    public float jumpPower = 16f;
+    public bool isFacingRight = false;
+    public bool isGrounded = false;
+
+    Rigidbody2D rb;
+    Animator animator;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        float horizontalInput = Input.GetAxis(horizontalAxis);
 
-        // Check if the player is grounded and jump input is pressed
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        // Flip sprite if needed
+        if (horizontalInput < 0f && !isFacingRight || horizontalInput > 0f && isFacingRight)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-
-            // Trigger the Jump animation
-            animator.SetTrigger("Jump");
+            FlipSprite();
         }
 
-        // Check if the player is still moving horizontally
-        if (Mathf.Abs(horizontal) > 0f)
+        // Check for jump input
+        if (Input.GetButtonDown(jumpButton) && isGrounded)
         {
-            // Trigger the Run animation
-            animator.SetBool("IsRunning", true);
+            Jump();
         }
-        else
+    }
+
+    void FixedUpdate()
+    {
+        // Move the player horizontally
+        float horizontalInput = Input.GetAxis(horizontalAxis);
+        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
+
+        // Update animator parameters
+        animator.SetFloat("xVelocity", Mathf.Abs(rb.velocity.x));
+        animator.SetFloat("yVelocity", rb.velocity.y);
+    }
+
+    void Jump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+        isGrounded = false;
+        animator.SetBool("isJumping", true);
+    }
+
+    void FlipSprite()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 ls = transform.localScale;
+        ls.x *= -1f;
+        transform.localScale = ls;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            // Trigger the Idle animation
-            animator.SetBool("IsRunning", false);
+            isGrounded = true;
+            animator.SetBool("isJumping", false);
         }
-
-        Flip();
     }
 
-    private void FixedUpdate()
+    void OnTriggerExit2D(Collider2D collision)
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-    }
-
-    private bool IsGrounded()
-    {
-        bool grounded = Physics2D.OverlapCircle(groundCheck.position, 0.3f, groundLayer); // Increased radius to 0.3f
-        Debug.Log("Grounded: " + grounded);
-        return grounded;
-    }
-
-    private void Flip()
-    {
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
+            isGrounded = false;
         }
     }
 }
