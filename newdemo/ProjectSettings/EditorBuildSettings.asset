@@ -5,14 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Cainos/Pixel Art Platformer - Village Props/Scene/MainMenu.unity
-    guid: 18a96f9f07e370646b62e891257782f3
+    path: Assets/Cainos/Pixel Art Platformer - Village Props/Scene/main menu.unity
+    guid: abf281ac2ff5dc14884e08362d6c36f5
   - enabled: 1
-    path: Assets/Cainos/Pixel Art Platformer - Village Props/Scene/SC Demo Scene
-      - Village Props.unity
+    path: Assets/Cainos/Pixel Art Platformer - Village Props/Scene/game scene.unity
     guid: 104b0d14871d44f4881963af94f49350
   m_configObjects: {}

@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     bool isFacingRight = false;
     float jumpPower = 16f;
     bool isGrounded = false;
-    public GameObject winPanel;
+    
 
     Rigidbody2D rb;
     Animator animator;
@@ -60,15 +60,6 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = true;
         animator.SetBool("isJumping", !isGrounded);
 
-        if(collision.tag == "Win")
-        {
-            winPanel.gameObject.SetActive(true);
-            Time.timeScale = 0;
-        }
-        else
-        {
-            winPanel.gameObject.SetActive(false);
-            Time.timeScale = 1;
-        }
+       
     }
 }

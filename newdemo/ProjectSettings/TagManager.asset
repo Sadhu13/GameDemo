@@ -7,7 +7,8 @@ TagManager:
   - Ground
   - Interactable
   - GroundPlayer2
-  - Win
+  - Object1
+  - Object2
   layers:
   - Default
   - TransparentFX
