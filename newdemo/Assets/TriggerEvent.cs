@@ -5,9 +5,9 @@ using Cainos.PixelArtPlatformer_VillageProps;
 
 public class TriggerEvent : MonoBehaviour
 {
-    public GameObject redGround; 
+    public GameObject redGround;
 
-    private Collider2D redGroundCollider; 
+    private Collider2D redGroundCollider;
 
     void Start()
     {
